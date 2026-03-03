@@ -1,0 +1,20 @@
+{
+  "name": "massnivel-backend",
+  "version": "1.0.0",
+  "description": "backend massnivel",
+  "homepage": "https://github.com/KmilOPhg/massnivel-backend#readme",
+  "bugs": {
+    "url": "https://github.com/KmilOPhg/massnivel-backend/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/KmilOPhg/massnivel-backend.git"
+  },
+  "license": "ISC",
+  "author": "Camilo Hurtado",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
