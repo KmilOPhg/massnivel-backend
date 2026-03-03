@@ -1,20 +1,26 @@
 {
-  "name": "massnivel-backend",
+  "name": "rest-api-ts-server",
   "version": "1.0.0",
-  "description": "backend massnivel",
-  "homepage": "https://github.com/KmilOPhg/massnivel-backend#readme",
-  "bugs": {
-    "url": "https://github.com/KmilOPhg/massnivel-backend/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/KmilOPhg/massnivel-backend.git"
-  },
+  "description": "REST API's con Express y TypeScript MASSNIVEL",
   "license": "ISC",
   "author": "Camilo Hurtado",
-  "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon --exec ts-node src/index.ts"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "nodemon": "^3.1.11",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "colors": "^1.4.0",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "pg": "^8.19.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.7",
+    "sequelize-typescript": "^2.1.6"
   }
 }
