@@ -14,11 +14,13 @@ export const registerUser = async (req: Request, res: Response) => {
         // Crear usuario
         const createdUser = await User.create({ name, lastname, phone, email, password: hashedPassword });
 
+        const userData = createdUser.toJSON();        
+
         sendSuccessResponse(res, 201, "Usuario registrado correctamente", {
-            name: createdUser.name,
-            lastname: createdUser.lastname,
-            phone: createdUser.phone,
-            email: createdUser.email,
+            name: userData.name,
+            lastname: userData.lastname,
+            phone: userData.phone,
+            email: userData.email,
         });
 
     } catch (error) {
