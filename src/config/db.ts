@@ -19,4 +19,5 @@ export const db = new Sequelize(DATABASE_URL, {
      * diciendo que todos los arhivos de la carpeta models que tengan .ts son modelos
      */
     models: [__dirname + '/../models/**/*.ts'],
+    logging: false, //Desactivamos el logging de Sequelize
 });
